@@ -23,9 +23,18 @@ class MainActivity : AppCompatActivity() {
             val inputId = idEdt.text.toString()
             val inputPw = pwEdt.text.toString()
 
+            if(inputId == "admin@admin.com" && inputPw == "qwer") {
+                Log.d("로그인확인", "관리자입니다.")
+            }
+            else {
+                Log.d("로그인확인", "로그인에 실패했습니다.")
+            }
+
+
 //            Log.d("입력아이디", inputId)
 //            Log.d("입력비번", inputPw)
 
+            /*
             if(inputId.equals("admin")) {
                 Log.d("입력ID 확인", "admin임")
             }
@@ -44,15 +53,16 @@ class MainActivity : AppCompatActivity() {
             }
             else {
                 Log.d("입력ID확인", "틀린 아이디")
-            }
-            
+            } */
+
+            /*
             when (inputId) {
                 "admin" -> {Log.d("입력ID","관리자")}
                 "admin@admin.com" -> {
                     Log.d("입력ID", "관리자이메일")
                 }
                 else -> {Log.d("입력ID","틀린ID")}
-            }
+            } */
        
 
         }
